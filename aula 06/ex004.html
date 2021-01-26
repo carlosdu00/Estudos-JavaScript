@@ -8,12 +8,14 @@
 <body>
     <script>
         var nome = window.prompt("Qual o seu nome ?")
-        document.write(`Olá ${nome}</br>`)
+        document.write(`Olá ${nome}<br>`)
         document.write("seu nome tem " + nome.length +" letras")
-        document.write("Seu nome me maiusculas é " + nome.toUpperCase() + "</br>")
-        document.write("Seu nome em ninusculas é " + nome.toLocaleLowerCase() + "</br>")
+        document.write("Seu nome me maiusculas é " + nome.toUpperCase() + "<br>")
+        document.write("Seu nome em ninusculas é " + nome.toLocaleLowerCase() + "<br>")
         var n1= 1545.5
-        document.write(n1.toFixed(2))
+        document.write(n1.toFixed(2)+"<br>")
+        document.write(n1.toFixed(2).toString().replace(".",",")+"<br>")
+        document.write(n1.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}))
     </script>
 </body>
 </html>
