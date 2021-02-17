@@ -14,15 +14,20 @@
     <h1> Dom </h1>
     <p>Aqui vai o resultado</p>
     <p>aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div id="msg">Clique em mim</div>
+    <div id = "msg">Clique em mim</div>
     
     <script>
-        var p= document.getElementsByTagName("p")[0]
-        document.write("esta escrito assim: "+p.innerText+"<br>")
+        var p = document.getElementsByTagName("p")[0]
+        document.write("Está escrito assim: "+p.innerText+"<br>")
 
         window.document.write(window.document.URL+"<br>")
-        document.write(document.URL)
-    </script>
+        document.write(document.URL+"<br>")
+
+        var d = document.getElementById("msg")
+        d.style.background = "green"
+        var q = document.querySelector("div#msg")
+        // com query usar "." para Id e "." para Class
+    </script> 
 
 </body>
 </html>
