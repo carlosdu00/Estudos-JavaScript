@@ -7,19 +7,48 @@
     <title>Document</title>
     <style>
         div#area{
+<<<<<<< HEAD
             font: normal 20pt Arial;
             background: rgb(38, 189, 38);
             color: hotpink;
             height: 200px;
             width:  200px;
+=======
+            font: normal 20pt arial;
+            background-color: rgb(245, 178, 97);
+            color: white;
+            width: 200px;
+            height: 200px;
+>>>>>>> b601be99f024009970b727dcc78e7275455f2c48
             line-height: 200px;
             text-align: center;
         }
     </style>
 </head>
 <body>
+<<<<<<< HEAD
     <div id="area">
         Interaja...
     </div>
+=======
+    <div id="area" onclick="clicar()" onmouseover="over()" onmouseout="out()">
+        Interaja...
+    </div>
+
+    <script>
+        var area= document.getElementById('area')
+
+        function clicar() {
+            area.innerText = "clicou!"
+        }
+        function over() {
+            area.innerText = "entrou!"  
+        }
+        function out() {
+            area.innerText = "saiu!"
+        }
+
+    </script>
+>>>>>>> b601be99f024009970b727dcc78e7275455f2c48
 </body>
 </html>

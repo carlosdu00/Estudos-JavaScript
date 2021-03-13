@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>detran</title>
+</head>
+<body>
+    <h1>sistema de multas</h1>
+    velocidade do carro:<input type="number" name="vel" id="txtvel"> Km/h
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res">
+        
+    </div>
+
+    <script>
+
+        function calcular(params) {
+            var txtvel= document.getElementById("txtvel")
+            var res= document.getElementById("res")
+            var vel = Number(txtvel.value)
+            res.innerHTML=`Sua velocidade atual é de <strong>${vel.toString().replace(".",",")}</strong> Km/h.`
+            //aqui eu retornei o valor para uma string usando toString() para que eu pudesse usar o replace(" "," ") para trocar o "." por uma ","
+            if (vel>60) {
+                res.innerHTML=res.innerHTML+" Você está <strong>multado</strong>!"
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
