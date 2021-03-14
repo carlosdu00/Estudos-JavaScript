@@ -5,42 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hora do dia</title>
-    <style>
-        body{
-            background-color: rgb(253, 194, 160);
-        }
-        div#painel{
-            background-color: white;
-            width: 300px;
-            
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hora do dia</h1>
-    <div id="painel">
-        <h2 id="frase">Agora são ? horas</h2>
+    <header>Hora do dia</header>
+    <section id="painel">
+        <h1 id="frase">Agora são ? horas</h1>
         <img id="fotohora">
-    </div>
-    <script>
-        var fotohora = document.getElementById("fotohora")
-
-        var agora = new Date()
-        var hora = agora.getHours()
-        var frase = document.getElementById("frase")
-        frase.innerText = (`Agora são ${hora} horas`)
-        if(hora<=5 || hora>=20){
-            fotohora.src="imagens/noite.png"
-        }
-        else if(hora<=7){
-            fotohora.src="imagens/nascersol.png"
-        }
-        else if(hora<=17){
-            fotohora.src="imagens/dia.png"
-        }
-        else{
-            fotohora.src="imagens/porsol.png"
-        }
-    </script>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
