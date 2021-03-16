@@ -12,6 +12,7 @@ section{
     border-radius: 10px;
     width: 400px;
     margin: auto;
+    padding: 15px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.308);
 }
 div#res{
