@@ -53,6 +53,12 @@ function verificar() {
             }
         }
         var res = document.getElementById("res")
-        res.innerText = `${genero} de ${idade} anos`
+        if (idade<2) {
+            res.innerText = `${genero} de 1 ano`
+        }
+        else{
+            res.innerText = `${genero} de ${idade} anos`
+        }
+        
     }
 }
